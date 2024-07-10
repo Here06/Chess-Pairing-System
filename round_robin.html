@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pairing</title>
+    <link rel="stylesheet" href="round_robin.css">
+</head>
+<body>
+    <h1>Chess pairings</h1>
+    <section id="content">
+        <section id="pairings">
+            <!-- All Pairings will be displayed here -->
+        </section>
+        <section id="Results">
+            <table id="playersTable">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>SRank</th>
+                        <th>Title</th>
+                        <th>Name</th>
+                        <th>Sex</th>
+                        <th>Rating</th>
+                        <th>Pts</th>
+                        <th>TB1</th>
+                        <th>TB2</th>
+                        <th>TB3</th>
+                        <th>TB4</th>
+                        <th>TB5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Player rows will be appended here -->
+                </tbody>
+            </table>
+            <button id="submitResults" onclick="submitResults()" disabled>Submit Results</button>
+        </section>
+    </section>
+    <script src="round_robin.js"></script>
+</body>
+</html>

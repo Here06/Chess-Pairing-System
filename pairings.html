@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pairings.css">
+    <meta charset="UTF-8">
+    <title>Chess Tournament Pairing</title>
+</head>
+<body>
+    <h1>Chess pairings</h1>
+    <section id="content">
+        <section id="left">
+            <form id="chessaForm">
+                <label for="cid">Enter Chessa ID (leave blank for manual entry):</label>
+                <input type="text" id="cid" name="cid">
+
+                <label>Manual entry:</label>
+                <label for="name">Enter Player Name</label>
+                <input type="text" id="name" name="name">
+                <label for="sex">Enter Player Sex (M/F)</label>
+                <input type="text" id="sex" sex="M">
+                <button type="submit">Add Player</button>
+            </form>
+        </section>
+        <section id="right">
+            <button id="save" onclick="savePlayers()">Save</button>
+            <table id="playersTable">
+                <thead>
+                    <tr>
+                        <th>SRank</th>
+                        <th>Name</th>
+                        <th>Sex</th>
+                        <th>Rating</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Player rows will be appended here -->
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <script src="pairings.js"></script>
+</body>
+</html>
